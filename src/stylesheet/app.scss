@@ -1,0 +1,98 @@
+@import "Variables";
+@import "Reset";
+
+/****************Header*****/
+
+.header {
+    display: flex;
+
+    // height: 10rem;
+    width: 100%;
+    justify-content: center;
+}
+
+/******background****/
+
+body {
+    background: linear-gradient(to top, transparent, 20%, $color-header),
+        url("../clean3000-starter/pexels-julia-volk-5769308\ \(1\).jpg");
+    // background-image: url("../clean3000-starter/pexels-julia-volk-5769308\ \(1\).jpg");
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+/************avis de passage*/
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // align-items: center;
+    padding: 5rem;
+    border: 0.5rem solid $color-button;
+    border-radius: 3rem;
+    margin: 2rem;
+    @media screen and (min-width: $xs-breakpoint) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+h1 {
+    text-decoration: underline;
+}
+.inputName {
+    margin: 3rem;
+}
+.inputDate {
+    margin: 3rem;
+}
+.inputTech {
+    margin: 3rem;
+}
+.inputTech {
+    margin: 3rem;
+}
+.thanks {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+button {
+    background-color: $color-button;
+    border-radius: 1rem;
+    color: white;
+    text-decoration: none;
+    width: 20rem;
+    height: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-decoration: none;
+}
+
+h3 {
+    text-decoration: none;
+}
+
+/*************recap*/
+
+.smallcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5rem;
+    border: 0.5rem solid $color-button;
+    padding: 5rem;
+    border-radius: 3rem;
+}
+.fiche {
+    list-style: none;
+}

@@ -3,10 +3,29 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import NotFound from './component/NotFound';
+import Recap from './component/Recap';
+
+
+
+
+const Root = () => (
+ <BrowserRouter>
+ <Routes>
+   <Route  exact path='/' element={<App/>} />
+   <Route exact path='/recap' element={<Recap/>} />
+   <Route  path='*' element={<NotFound/>}/>
+ </Routes >
+ </BrowserRouter>
+);
+
+
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Root />
   </React.StrictMode>,
   document.getElementById('root')
 );
